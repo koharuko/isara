@@ -262,15 +262,15 @@ body {
 .ttl_flame::before {
   top: 0;
   left: 0;
-  border-top: 3px solid #ebba4d;
-  border-left: 3px solid #ebba4d;
+  border-top: 4px solid #ebba4d;
+  border-left: 4px solid #ebba4d;
 }
 
 .ttl_flame::after {
   right: 0;
   bottom: 0; 
-  border-right: 3px solid #ebba4d;
-  border-bottom: 3px solid #ebba4d;
+  border-right: 4px solid #ebba4d;
+  border-bottom: 4px solid #ebba4d;
 } 
 
 .txt_yellow {
@@ -494,19 +494,25 @@ body {
 }
 
 .sec06 img {
+  margin: 0;
   width: 360px;
   height: 180px;
   
 }
 
 .sec06_container {
-  display: flex;
-  flex-wrap: wrap;
-}
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 
+}
+  
 .sec06_item {
-  padding: 10px;
-  width: 32%;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
 }
 
 .sec06 .txt_yellow {
@@ -528,6 +534,87 @@ body {
   font-weight: bold;
 }
 
+.sec06_undertxt {
+  margin: 40px auto 50px auto;
+  font-size: 14px;
+}
+
+
+
+.sec08 {
+  position: relative;
+  padding: 50px 0 70px;
+  text-align: center;
+  font-size: 14px;
+  background: #EBB94D;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.sec08:after {
+  content: '';
+  position: absolute;
+  border-top: 24px solid #EBB94D;
+  border-right: 28px solid transparent;
+  border-left: 28px solid transparent;
+  bottom: -20px;
+  margin-left: -22px;
+  text-align: center;
+}
+
+.sec08:before {
+  position: absolute;
+  content: 'Q&A';
+  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-left: -40px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #EBB94D;
+  line-height: 80px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sec08 .ttl_flame::before {
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+
+.sec08 .ttl_flame::after {
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+} 
+
+.sec08 .ttl_flame {
+  margin-top: 100px;
+  padding: 10px;
+  color: #fff;
+}
+
+
+.sec09 {
+  text-align: center;
+}
+
+.sec09 img {
+  width: 239px;
+  height: 239px;
+}
+
+.sec09 .flame_yellow {
+  padding: 0;
+  margin-top: 40px;
+  background-color: #fff;
+  border: 2px solid #ebba4d;
+}
+
+.sec09 .flexbox {
+  display: flex;
+}
 
 /* フッター */
 .footer {
